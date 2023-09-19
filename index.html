@@ -20,7 +20,14 @@
     </div>
     <p>Use the buttons below to keep score</p>
     <span>Playing To</span>
-    <input type="number" min="5" max="10" placeholder="5" />
+    <select id="playto">
+      <option value="5" default>5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
     <div class="buttons">
       <button id="p1Button">+1 Player One</button>
       <button id="p2Button">+2 Player Two</button>
