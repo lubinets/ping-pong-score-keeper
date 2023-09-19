@@ -1,5 +1,6 @@
 const p1Point = document.querySelector("#p1Button");
 const p2Point = document.querySelector("#p2Button");
+const resetButton = document.querySelector("#reset");
 
 const p1Display = document.querySelector(".score-player-1");
 const p2Display = document.querySelector(".score-player-2");
@@ -27,4 +28,12 @@ p2Point.addEventListener("click", function () {
       isGameOver = true;
     }
   }
+});
+
+resetButton.addEventListener("click", function () {
+  isGameOver = false;
+  p1Score = 0;
+  p2Score = 0;
+  p1Display.textContent = p1Score;
+  p2Display.textContent = p2Score;
 });
